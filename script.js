@@ -10,6 +10,8 @@ function renderTodos () {
     for(var i =0; i < todos.length; i++){
         var liEL = document.createElement("li");
         liEL.textContent =todos[i]
+        liEL.setAttribute("data-index", 1);
+            var newButton = document.createElement
         todoList.append(liEL);
     }
 }
