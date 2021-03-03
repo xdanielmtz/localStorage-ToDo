@@ -28,3 +28,12 @@ todoForm.addEventListener("submit", function (e) {
 
 
 renderTodos();
+
+todoList.addEventListener("click", function (event) {
+    if(event.target.matches("button")){
+        var indexToComplete = event.target.parentElement.getAttribute("data-index");
+        console.log(indexToComplete)
+        todos.splice(indexToComplete, 1);
+        renderTodos();
+    }
+})
