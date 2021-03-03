@@ -18,6 +18,7 @@ todoForm.addEventListener("submit", function (e) {
     e.preventDefault();
     var newTodo = todoInput.value;
     console.log(newTodo);
+    todo.push(newTodo);
 })
 
 
