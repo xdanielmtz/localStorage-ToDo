@@ -11,7 +11,9 @@ function renderTodos () {
         var liEL = document.createElement("li");
         liEL.textContent =todos[i]
         liEL.setAttribute("data-index", 1);
-            var newButton = document.createElement
+            var newButton = document.createElement("button");
+            newButton.textContent = "Complete";
+            liEL.append(newButton);
         todoList.append(liEL);
     }
 }
