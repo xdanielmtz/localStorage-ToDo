@@ -14,4 +14,11 @@ function renderTodos () {
     }
 }
 
+todoForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+    var newTodo = todoInput.value;
+    console.log(newTodo);
+})
+
+
 renderTodos();
