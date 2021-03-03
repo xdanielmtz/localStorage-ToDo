@@ -4,3 +4,7 @@ var todoList = document.querySelector("#todo-list");
 var todoCountSpan = document.querySelector("#todo-count");
 
 var todos = ["Learn HTML", "Learn CSS", "Learn JavaScript"];
+
+function renderTodos () {
+    todoCountSpan.textContent = todos.length; 
+}
