@@ -7,4 +7,11 @@ var todos = ["Learn HTML", "Learn CSS", "Learn JavaScript"];
 
 function renderTodos () {
     todoCountSpan.textContent = todos.length; 
+    for(var i =0; i < todos.length; i++){
+        var liEL = document.createElement("li");
+        liEL.textContent =todos[i]
+        todoList.append(liEL);
+    }
 }
+
+renderTodos();
